@@ -2,34 +2,11 @@ import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import Texto from './Texto';
 
-const frutas = [
-  {
-    nome: "Tomate",
-    imagem: require("../../assets/frutas/Tomate.png"),
-  },
-  {
-    nome: "Brócolis",
-    imagem: require("../../assets/frutas/Brócolis.png"),
-  },
-  {
-    nome: "Batata",
-    imagem: require("../../assets/frutas/Batata.png"),
-  },
-  {
-    nome: "Pepino",
-    imagem: require("../../assets/frutas/Pepino.png"),
-  },
-  {
-    nome: "Abóbora",
-    imagem: require("../../assets/frutas/Abóbora.png"),
-  },
-];
-
-export default function Itens() {
+export default function Itens({ tituloItens, itens }) {
   return <>
-    <Texto style={estilos.tituloItens}>Itens da cesta</Texto>
+    <Texto style={estilos.tituloItens}>{ tituloItens }</Texto>
 
-    {frutas.map(({ nome, imagem }) => 
+    {itens.map(({ nome, imagem }) => 
       <View key={nome} style={estilos.item}>
         <Image source={imagem} style={estilos.itemImagem} />
         <Texto style={estilos.itemNome}>{ nome }</Texto>

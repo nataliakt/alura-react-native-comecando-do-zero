@@ -5,14 +5,14 @@ import Topo from '../components/Topo';
 import Detalhes from '../components/Detalhes';
 import Itens from '../components/Itens';
 
-export default function Cesta() {
+export default function Cesta({ titulo, tituloItens, itens, ...detalhes }) {
   return <ScrollView>
-    <Topo titulo="Detalhes da cesta" />
+    <Topo titulo={titulo} />
 
     <View style={estilos.cesta}>
-      <Detalhes />
+      <Detalhes {...detalhes} />
 
-      <Itens />
+      <Itens tituloItens={tituloItens} itens={itens} />
     </View>
   </ScrollView>
 }

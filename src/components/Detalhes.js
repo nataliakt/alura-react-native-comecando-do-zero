@@ -2,23 +2,22 @@ import React from 'react';
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 
 import Texto from './Texto';
-import logo from '../../assets/logo.png';
 
-export default function Detalhes() {
+export default function Detalhes({ nomeCesta, logoFazenda, nomeFazenda, descricao, preco, botao }) {
   return <>
-    <Texto style={estilos.nome}>Cesta de Verduras</Texto>
+    <Texto style={estilos.nome}>{ nomeCesta }</Texto>
 
     <View style={estilos.fazenda}>
-      <Image source={logo} style={estilos.imagemFazenda} />
-      <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
+      <Image source={logoFazenda} style={estilos.imagemFazenda} />
+      <Texto style={estilos.nomeFazenda}>{ nomeFazenda} </Texto>
     </View>
 
-    <Texto style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</Texto>
+    <Texto style={estilos.descricao}>{ descricao }</Texto>
 
-    <Texto style={estilos.preco}>R$ 40,00</Texto>
+    <Texto style={estilos.preco}>{ preco }</Texto>
 
     <TouchableOpacity style={estilos.botao}>
-      <Texto style={estilos.botaoTexto}>Comprar</Texto>
+      <Texto style={estilos.botaoTexto}>{ botao }</Texto>
     </TouchableOpacity>
   </>
 }
