@@ -53,7 +53,44 @@ const estilos = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     marginTop: 8,
-  }
+  },
+  botao: {
+    marginTop: 16,
+    paddingVertical: 16,
+    backgroundColor: "#2A9F85",
+    borderRadius: 6,
+  },
+  botaoTexto: {
+    color: "#ffffff",
+    fontWeight: "bold",
+    fontSize: 16,
+    lineHeight: 26,
+    textAlign: "center",
+  },
+  tituloItens: {
+    color: "#464646",
+    fontWeight: "bold",
+    marginTop: 32,
+    marginBottom: 8,
+    fontSize: 20,
+    lineHeight: 32,
+  },
+  item: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderBottomWidth: 1,
+    borderBottomColor: "#ECECEC",
+    paddingVertical: 16,
+  },
+  itemImagem: {
+    width: 46,
+    height: 46,
+  },
+  itemNome: {
+    fontSize: 16,
+    lineHeight: 26,
+    marginLeft: 11
+  },
 });
 
 export default estilos;
