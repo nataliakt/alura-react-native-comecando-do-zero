@@ -4,13 +4,13 @@
 
 Esse é o projeto do curso **Começando do Zero** da formação em **React Native** na [Alura](https://www.alura.com.br/).
 
-# Projeto
+## Projeto
 
 Este projeto implementa a tela de detalhes da cesta do e-commerce *orgs*. Nesta tela são mostrados dados estáticos do nome da cesta, fazenda, preço e itens da cesta.
 
 <img src="https://user-images.githubusercontent.com/9091491/123982988-e3ccb700-d999-11eb-880e-872881ee8b10.gif" width="350" />
 
-# Técnicas e Tecnologias
+## Técnicas e Tecnologias
 
 As técnicas e tecnologias utilizadas no projeto são:
 
@@ -21,14 +21,15 @@ As técnicas e tecnologias utilizadas no projeto são:
   - `ScrollView`: container para blocos de componentes com barra de rolagem
   - `Image`: componente para exibir imagens
   - `TouchableOpacity`: componente para criar áreas clicáveis
+- `Componentes customizados`: criação e utilização de componentes customizados
 - `Suporte a telas`: não permitir que conteúdos estejam sob a *StatusBar* (barra superior nativa) ou barra de gestos do iPhone
 - `Expo Google Fonts`: suporte a fontes do google via Expo
 - `StyleSheet`: estilização básica de componentes
 - `Dimensions`: captura de dados das dimenções da tela
 
-# Executando o projeto
+## Executando o projeto
 
-## Pré-requisitos
+### Pré-requisitos
 
 Para conseguir seguir este README e rodar o projeto você pode precisar dos seguintes itens:
 - Git para clonar o projeto e acessar as branches. Você pode instalar [aqui](https://git-scm.com/downloads);
@@ -49,7 +50,7 @@ npm install --global expo-cli
 expo --version
 ```
 
-## Clonando o projeto
+### Clonando o projeto
 
 Para ter acesso aos arquivos do projeto você pode clonar usando o seguinte comando:
 
@@ -57,7 +58,7 @@ Para ter acesso aos arquivos do projeto você pode clonar usando o seguinte coma
 git clone https://github.com/alura-cursos/react-native-comecando-do-zero.git
 ```
 
-## Rodando o Projeto
+### Rodando o Projeto
 
 Agora que já tem a pasta do projeto na sua máquina, dentro dela instale as dependências:
 ```
